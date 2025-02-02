@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Export Chrome Bookmarks",
+  "version": "1.0",
+  "description": "Export Chrome bookmarks to an HTML file with deduplication",
+  "permissions": ["bookmarks"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}
